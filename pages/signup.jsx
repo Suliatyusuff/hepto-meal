@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from '../styles/auth.module.scss'
 import { AuthLayout } from "components";
 
-export default function Home () {
+export default function SignUp () {
     return (
         <AuthLayout title="Sign Up - Hepto Meal system">
             <form action="" method="post">
