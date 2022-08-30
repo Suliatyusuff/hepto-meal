@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export const Meta = ( {
-	title = "Hepto Meal system",
+	title = "Welcome",
 	keywords,
 	description,
 } ) => {
@@ -24,7 +24,7 @@ export const Meta = ( {
 			<meta name="keywords" content={keywords} />
 			<meta name="description" content={description} />
 			<link rel="icon" href="/favicon.ico" />
-			<title>{title}</title>
+			<title>{title} - {name}</title>
 		</Head>
 	);
 };

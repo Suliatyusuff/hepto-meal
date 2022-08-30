@@ -4,8 +4,8 @@ import { AuthLayout } from "components";
 
 export default function SignUp () {
     return (
-        <AuthLayout title="Sign Up - Hepto Meal system">
-            <form action="" method="post">
+        <AuthLayout title="Sign Up">
+            <form action="/home" method="post">
                 <div className='my-5'>
                     <label htmlFor="firstName" className='font-medium text-sm'>First Name</label>
                     <input type="text" name="firstName" className={`border border-primary-500 ${styles.inputShadow} w-full block rounded-lg h-10 md:h-12 focus:border-gray focus:outline-none px-4`} id="firstName" />
