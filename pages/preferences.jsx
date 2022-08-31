@@ -1,9 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import { Layout } from "components";
-import { recipeFood } from "assets";
-import Image from "next/image";
-import { Button, PeferenceItem } from "../components";
+import { Layout, PeferenceItem } from "components";
 
 const recent = {
     name: "recent",
