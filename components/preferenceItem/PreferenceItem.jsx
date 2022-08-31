@@ -1,4 +1,4 @@
-export const PeferenceItem = ( { name, value, onChange, active } ) => {
+export const PreferenceItem = ( { name, value, onChange, active } ) => {
     return (
         <span>
             <label htmlFor={`${name}-${value}`} className={`rounded-xl py-2 md:py-3 xl:py-4 focus:border-gray focus:outline-none ${active === value ? 'bg-primary-500' : 'bg-black/50'}  text-white 
