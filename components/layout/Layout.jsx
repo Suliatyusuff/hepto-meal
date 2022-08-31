@@ -1,4 +1,4 @@
-import { Meta } from "components";
+import { Meta, Navbar } from "components";
 
 export const Layout = ( {
 	children,
@@ -11,7 +11,7 @@ export const Layout = ( {
 		<>
 			<Meta title={title} keywords={keywords} description={description} />
 			<header>
-				{/* {navbar && <Navbar />} */}
+				{navbar && <Navbar />}
 			</header>
 			<main data-testid="main">{children}</main>
 		</>

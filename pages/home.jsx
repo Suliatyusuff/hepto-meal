@@ -8,7 +8,7 @@ export default function Home () {
     return (
         <Layout title="Home">
             <section className="px-5 md:px-20">
-                <h1 className="font-bold text-2xl text-primary-500">
+                <h1 className="font-bold text-4xl text-primary-500">
                     Welcome Menu
                 </h1>
             </section>
