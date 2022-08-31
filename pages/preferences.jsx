@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import { Layout, PeferenceItem } from "components";
+import { Layout, PreferenceItem } from "components";
 
 const recent = {
     name: "recent",
@@ -45,7 +45,7 @@ export default function Preferences () {
                     <div className="flex flex-wrap gap-x-2 gap-y-10 md:gap-10 xl:gap-20 mt-5">
                         {
                             recent.items.map( ( item, index ) => (
-                                <PeferenceItem active={selectedRecent} key={index} name={recent.name} value={item} onChange={e => setSelectedRecent( e.target.value )} />
+                                <PreferenceItem active={selectedRecent} key={index} name={recent.name} value={item} onChange={e => setSelectedRecent( e.target.value )} />
                             )
                             )
                         }
@@ -58,7 +58,7 @@ export default function Preferences () {
                     <div className="flex flex-wrap gap-x-2 gap-y-10 md:gap-10 xl:gap-20 mt-5">
                         {
                             courses.items.map( ( course, index ) => (
-                                <PeferenceItem active={selectedCourse} key={index} name={courses.name} value={course} onChange={e => setSelectedCourse( e.target.value )} />
+                                <PreferenceItem active={selectedCourse} key={index} name={courses.name} value={course} onChange={e => setSelectedCourse( e.target.value )} />
                             )
                             )
                         }
@@ -71,7 +71,7 @@ export default function Preferences () {
                     <div className="flex flex-wrap gap-x-2 gap-y-10 md:gap-10 xl:gap-20 mt-5">
                         {
                             preparationTime.items.map( ( time, index ) => (
-                                <PeferenceItem active={selectedPreparationTime} key={index} name={preparationTime.name} value={time} onChange={e => setSelectedPreparationTime( e.target.value )} />
+                                <PreferenceItem active={selectedPreparationTime} key={index} name={preparationTime.name} value={time} onChange={e => setSelectedPreparationTime( e.target.value )} />
                             )
                             )
                         }
@@ -84,7 +84,7 @@ export default function Preferences () {
                     <div className="flex flex-wrap gap-x-2 gap-y-10 md:gap-10 xl:gap-20 mt-5">
                         {
                             dietaryPeferences.items.map( ( item, index ) => (
-                                <PeferenceItem active={selectedDietaryPeferences} key={index} name={dietaryPeferences.name} value={item} onChange={e => setSelectedDietaryPeferences( e.target.value )} />
+                                <PreferenceItem active={selectedDietaryPeferences} key={index} name={dietaryPeferences.name} value={item} onChange={e => setSelectedDietaryPeferences( e.target.value )} />
                             )
                             )
                         }
@@ -97,7 +97,7 @@ export default function Preferences () {
                     <div className="flex flex-wrap gap-x-2 gap-y-10 md:gap-10 xl:gap-20 mt-5">
                         {
                             allergies.items.map( ( item, index ) => (
-                                <PeferenceItem active={selectedAllergies} key={index} name={allergies.name} value={item} onChange={e => setSelectedAllergies( e.target.value )} />
+                                <PreferenceItem active={selectedAllergies} key={index} name={allergies.name} value={item} onChange={e => setSelectedAllergies( e.target.value )} />
                             )
                             )
                         }
@@ -110,7 +110,7 @@ export default function Preferences () {
                     <div className="flex flex-wrap gap-x-2 gap-y-10 md:gap-10 xl:gap-20 mt-5">
                         {
                             cuisines.items.map( ( item, index ) => (
-                                <PeferenceItem active={selectedCuisines} key={index} name={cuisines.name} value={item} onChange={e => setSelectedCuisines( e.target.value )} />
+                                <PreferenceItem active={selectedCuisines} key={index} name={cuisines.name} value={item} onChange={e => setSelectedCuisines( e.target.value )} />
                             )
                             )
                         }
