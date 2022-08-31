@@ -2,3 +2,4 @@ export * from "./authLayout";
 export * from "./button";
 export * from "./layout"
 export * from "./navbar";
+export * from "./peferenceItem";

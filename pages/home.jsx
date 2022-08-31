@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Layout } from "components";
 import { recipeFood } from "assets";
 import Image from "next/image";
@@ -26,7 +25,7 @@ export default function Home () {
                     The meal of your choice will be prepared for you if you submit a description.
                 </p>
                 <div className="mt-20">
-                    <Button as="Link" href="/create-recipe" text="Create a recipe" className="rounded-xl h-[3.325rem]" />
+                    <Button as="Link" href="/preferences" text="Create a recipe" className="rounded-xl h-[3.325rem]" />
                 </div>
             </section>
         </Layout>
