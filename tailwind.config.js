@@ -11,10 +11,7 @@ module.exports = {
       },
       colors: {
         "primary-500": "#43703F"
-      },
-      screens: {
-        "4xl": "2560px",
-      },
+      }
     },
   },
   plugins: [],

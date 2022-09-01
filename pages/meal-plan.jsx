@@ -6,7 +6,7 @@ import { Punjabi, Dum, Navratan } from "assets";
 var curr = new Date();
 var date = curr.toISOString().substring( 0, 10 );
 
-export default function MealPreparation () {
+export default function MealPlan () {
     return (
         <Layout title="Meal Plan">
 

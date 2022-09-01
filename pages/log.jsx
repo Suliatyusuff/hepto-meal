@@ -1,21 +1,57 @@
 import Image from "next/image";
-import { Layout, Button } from "components";
-import { Punjabi, Dum, Navratan } from "assets";
+import Link from "next/link";
+import { Layout } from "components";
+import { WriteIcon, EditIcon, CloseIcon } from "assets";
 
 
-var curr = new Date();
-var date = curr.toISOString().substring( 0, 10 );
-
-export default function MealPreparation () {
+const logs = [
+    {
+        col1: "Punjabi Choley",
+        col2: "Vegan",
+    },
+    {
+        col1: "Navratan korma",
+        col2: "Vegetarian",
+    },
+    {
+        col1: "Dum Biryani",
+        col2: "Non-vegetarian",
+    },
+    {
+        col1: "Indian potato and lentil stew",
+        col2: "Vegetarian",
+    },
+    {
+        col1: "Poha",
+        col2: "Glutten-free",
+    },
+    {
+        col1: "Mutton kofte",
+        col2: "Non-vegetarian",
+    },
+    {
+        col1: "Rogan josh",
+        col2: "Non-vegetarian",
+    },
+    {
+        col1: "Cauliflower shorba ",
+        col2: "Glutten-free",
+    },
+    {
+        col1: "Chickpeas with poached eggs",
+        col2: "Vegetarian",
+    }
+]
+export default function Log () {
     return (
-        <Layout title="Meal Plan">
+        <Layout title="Log">
 
             <section className="px-4 md:px-10 mb-20 bg-[#E5E5E5]/25 min-h-screen ">
                 <div className="w-full flex justify-center flex-col items-center gap-5">
-                    <form action="" method="post" className="mr-40 w-6/12 pt-5">
+                    <form action="" method="post" className=" w-full md:w-8/12 pt-5">
                         <div className="relative  ">
 
-                            <input type="input" placeholder="Type your Food" className="bg-primary-500/40 h-12 px-3 w-full focus:border-black/40 placeholder-gray-500 font-bold text-xl focus:outline-none text-black/30 rounded-lg" />
+                            <input type="input" placeholder="Type your Food" className="bg-primary-500/40 h-10 md:h-12 px-3 w-full focus:border-black/40 placeholder-gray-500 font-bold text-sm md:text-xl focus:outline-none text-black/30 rounded-lg" />
 
                             <span className="absolute inset-y-0 right-10 flex items-center pl-3">
                                 <svg className="h-7 w-7 fill-black/60" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
@@ -27,11 +63,54 @@ export default function MealPreparation () {
                             </span>
                         </div>
                     </form>
-                    <div className="mr-40 w-6/12 pt-7 bg-white rounded-xl px-16 flex justufy-around">
-
+                    <div className="w-full md:w-8/12 py-2 bg-white rounded-xl px-3 flex justify-around gap-6">
+                        <Link href="">
+                            <a className="flex gap-2 items-center">
+                                <span className="hidden md:inline-block">
+                                    <Image src={WriteIcon} alt="food" width={50} height={50} />
+                                </span>
+                                <span className="md:hidden">
+                                    <Image src={WriteIcon} alt="write" width={20} height={20} />
+                                </span>
+                                <span className="text-primary-500 font-bold block md:mt-3 text-sm md:text-2xl">Add New Food
+                                </span>
+                            </a>
+                        </Link>
+                        <select name="" id="" className="border-0 focus:border-0 focus:outline-none w-50 text-sm md:text-2xl text-primary-500 font-bold">
+                            <option value="">All</option>
+                        </select>
                     </div>
                 </div>
 
+                <div className="border rounded-3xl border-primary-500 pb-2 mt-5 bg-white">
+                    {
+                        logs.map( ( log, index ) => (
+                            <div key={index} className={`grid grid-cols-3 gap-3 ${index < logs.length - 1 ? 'border-b border-b-black/50' : ''} px-5 pt-3`}>
+                                <div className="flex items-end">
+                                    <Link href="/meal">
+                                        <a className="md:font-bold text-sm md:text-2xl text-black hover:text-primary-500/80">
+                                            {log.col2}
+                                        </a>
+                                    </Link>
+                                </div>
+                                <div className="md:font-bold text-sm md:text-2xl text-black flex items-end">{log.col2}</div>
+                                <div className="flex justify-end gap-5 md:gap-10 ">
+                                    <Link href="/meal">
+                                        <a>
+                                            <Image src={CloseIcon} alt="food" width={50} height={50} />
+                                        </a>
+                                    </Link>
+                                    <Link href="/meal">
+                                        <a>
+                                            <Image src={EditIcon} alt="food" width={50} height={50} />
+
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
+                        ) )
+                    }
+                </div>
             </section>
 
         </Layout>

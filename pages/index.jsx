@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styles from '../styles/auth.module.scss'
 import { AuthLayout } from "components";
 import { useRouter } from 'next/router'
 
