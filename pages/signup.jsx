@@ -1,11 +1,19 @@
 import Link from "next/link";
 import styles from '../styles/auth.module.scss'
 import { AuthLayout } from "components";
+import { useRouter } from "next/router";
 
 export default function SignUp () {
+
+    const router = useRouter()
+
+    const handleSubmit = ( e ) => {
+        e.preventDefault();
+        router.push( "/home" )
+    }
     return (
         <AuthLayout title="Sign Up">
-            <form action="/home" method="post">
+            <form onSubmit={handleSubmit} method="post">
                 <div className='my-5'>
                     <label htmlFor="firstName" className='font-medium text-sm'>First Name</label>
                     <input type="text" name="firstName" className={`border border-primary-500 ${styles.inputShadow} w-full block rounded-lg h-10 md:h-12 focus:border-gray focus:outline-none px-4`} id="firstName" />

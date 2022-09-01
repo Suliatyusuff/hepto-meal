@@ -23,7 +23,7 @@ export default function Ingredients () {
                                 <p className="text-primary-500 font-bold block mt-3 text-xl"> Indian Potato and Lentil Stew</p>
                             </a>
                         </Link>
-                        <div className="text-[#43703F]/50 text-xl font-bold mt-1 flex items-center">
+                        <div className="text-primary-500/50 text-xl font-bold mt-1 flex items-center">
                             <Image src={Clock} alt="food" width={20} height={20} />
                             <span className="ml-3">45 mins</span>
                         </div>
