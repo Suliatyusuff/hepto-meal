@@ -5,10 +5,10 @@ import { Food1, Clock } from "assets";
 
 
 
-export default function Ingredients () {
+export default function Meal () {
 
     return (
-        <Layout title="Preferences">
+        <Layout title="Meal">
 
             <section className="px-4 md:px-10 bg-food-pan bg-no-repeat min-h-screen bg-cover pb-20 bg-center">
 
