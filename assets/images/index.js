@@ -9,7 +9,7 @@ import Dum from "./dum.png";
 import Navratan from "./navratan.png";
 import Punjabi from "./punjabi.png";
 import WriteIcon from "./write-icon.png";
-import CloseIcon from "./close-icon.png";
+import CloseIcon from "./close.png";
 import EditIcon from "./edit-icon.png";
 
 
