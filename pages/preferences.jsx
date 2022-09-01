@@ -20,7 +20,7 @@ const dietaryPeferences = {
 }
 const allergies = {
     name: "allergies",
-    items: [ "Egg", "Milk", "Soy", "Peanuts", "Trea nut", "Shellfish" ]
+    items: [ "Egg", "Milk", "Soy", "Peanuts", "Trea nut", "Shellfish", "No allergies" ]
 }
 const cuisines = {
     name: "cuisines",

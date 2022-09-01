@@ -46,7 +46,7 @@ export default function Log () {
     return (
         <Layout title="Log">
 
-            <section className="px-4 md:px-10 mb-20 bg-[#E5E5E5]/25 min-h-screen ">
+            <section className="px-4 md:px-10 pb-20 bg-[#E5E5E5]/25 min-h-screen ">
                 <div className="w-full flex justify-center flex-col items-center gap-5">
                     <form action="" method="post" className=" w-full md:w-8/12 pt-5">
                         <div className="relative  ">
@@ -82,12 +82,12 @@ export default function Log () {
                     </div>
                 </div>
 
-                <div className="border rounded-3xl border-primary-500 pb-2 mt-5 bg-white">
+                <div className="border shadow-box rounded-3xl border-primary-500 pb-2 mt-5 bg-white">
                     <div className={`grid grid-cols-3 gap-3  px-5 py-3`}>
-                        <div className="flex items-end md:font-bold text-sm md:text-2xl text-black/50">
+                        <div className="flex items-end font-medium md:font-bold text-sm md:text-2xl text-black/50">
                             Food&nbsp;Name
                         </div>
-                        <div className="flex items-end md:font-bold text-sm md:text-2xl text-black/50">
+                        <div className="flex items-end font-medium md:font-bold text-sm md:text-2xl text-black/50">
                             Dietary&nbsp;Preference
                         </div>
                         <div className="text-center">
@@ -106,12 +106,12 @@ export default function Log () {
                                 </div>
                                 <div className="md:font-bold text-sm md:text-2xl text-black flex items-end">{log.col2}</div>
                                 <div className="flex justify-end gap-5 md:gap-10 ">
-                                    <Link href="/meal">
+                                    <Link href="">
                                         <a>
                                             <Image src={CloseIcon} alt="food" width={50} height={50} />
                                         </a>
                                     </Link>
-                                    <Link href="/meal">
+                                    <Link href="">
                                         <a>
                                             <Image src={EditIcon} alt="food" width={50} height={50} />
 
@@ -121,6 +121,23 @@ export default function Log () {
                             </div>
                         ) )
                     }
+
+                </div>
+                <div className="flex justify-end gap-4 mt-2 items-center">
+                    <span className="text-primary-500 text-xs">1-9 of 50</span>
+                    <div>
+                        <Link href="">
+                            <a className="text-primary-500 font-bold text-3xl">
+                                &lt;
+                            </a>
+                        </Link>
+                        <Link href="">
+                            <a className="text-primary-500 font-bold text-3xl ml-3 mr-5 md:mr-10">
+                                &gt;
+                            </a>
+                        </Link>
+                    </div>
+
                 </div>
             </section>
 

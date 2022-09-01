@@ -37,10 +37,10 @@ export const Navbar = () => {
                     </a>
                 </Link>
             </div>
-            <div className="hidden lg:flex items-center">
+            <div className="flex justify-between w-full lg:w-auto mt-2 lg:mt-0 items-center">
                 <form action="" method="post">
-                    <div className="relative  mr-40">
-                        <input type="search" placeholder="Search..." className="bg-black/20 h-12 px-3 focus:border-black/40 focus:outline-none text-black/30 rounded-lg" />
+                    <div className="relative  md:mr-40">
+                        <input type="text" placeholder="Search..." className="bg-black/20 h-10 lg:h-12 px-3 focus:border-black/40 focus:outline-none text-black/30 rounded-lg" />
 
                         <span className="absolute inset-y-0 right-3 flex items-center pl-3">
                             <svg className="h-7 w-7 fill-black/60" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
