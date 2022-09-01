@@ -83,6 +83,17 @@ export default function Log () {
                 </div>
 
                 <div className="border rounded-3xl border-primary-500 pb-2 mt-5 bg-white">
+                    <div className={`grid grid-cols-3 gap-3  px-5 py-3`}>
+                        <div className="flex items-end md:font-bold text-sm md:text-2xl text-black/50">
+                            Food&nbsp;Name
+                        </div>
+                        <div className="flex items-end md:font-bold text-sm md:text-2xl text-black/50">
+                            Dietary&nbsp;Preference
+                        </div>
+                        <div className="text-center">
+
+                        </div>
+                    </div>
                     {
                         logs.map( ( log, index ) => (
                             <div key={index} className={`grid grid-cols-3 gap-3 ${index < logs.length - 1 ? 'border-b border-b-black/50' : ''} px-5 pt-3`}>
