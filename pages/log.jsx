@@ -89,7 +89,7 @@ export default function Log () {
                                 <div className="flex items-end">
                                     <Link href="/meal">
                                         <a className="md:font-bold text-sm md:text-2xl text-black hover:text-primary-500/80">
-                                            {log.col2}
+                                            {log.col1}
                                         </a>
                                     </Link>
                                 </div>
