@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { Layout, Button, IngredientCheckList } from "components";
+import { useRouter } from "next/router";
 
 const ingredients = [
     {
@@ -35,6 +35,13 @@ const ingredients = [
 
 export default function Ingredients () {
 
+    const router = useRouter()
+
+    const handleSubmit = ( e ) => {
+        e.preventDefault();
+        router.push( "/meal" )
+    }
+
     return (
         <Layout title="Preferences">
 
@@ -43,7 +50,7 @@ export default function Ingredients () {
                 <h1 className="font-bold text-4xl text-black pt-10">
                     Ingredients Checklist
                 </h1>
-                <form action="/meal" method="post">
+                <form onSubmit={handleSubmit} method="post">
                     <div className="pt-12">
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-10 mt-5">
                             {

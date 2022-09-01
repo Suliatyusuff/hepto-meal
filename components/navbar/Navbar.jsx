@@ -26,13 +26,13 @@ export const Navbar = () => {
                         Preferences
                     </a>
                 </Link>
-                <Link href="/Preferences">
+                <Link href="/meal-plan">
                     <a className={`${router.pathname === "/meal-plan" ? 'text-primary-500' : 'text-black/80'} hover:text-primary-500/80 font-medium text-lg`}>
                         Meal Plan
                     </a>
                 </Link>
-                <Link href="/Preferences">
-                    <a className={`${router.pathname === "/home" ? 'text-primary-500' : 'text-black/80'} hover:text-primary-500/80 font-medium text-lg`}>
+                <Link href="/log">
+                    <a className={`${router.pathname === "/log" ? 'text-primary-500' : 'text-black/80'} hover:text-primary-500/80 font-medium text-lg`}>
                         Log Food
                     </a>
                 </Link>
