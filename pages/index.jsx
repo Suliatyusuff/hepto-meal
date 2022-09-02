@@ -28,7 +28,7 @@ export default function Login () {
 
         <Link href={"/"} >
           <a className='text-primary-500 hover:text-primary-500/90 underline font-medium text-sm'>
-            Forgot Password?
+            Forgot Password, Click here?
           </a>
         </Link>
 
